@@ -9,7 +9,7 @@ class github_search_url:
     language=''
 
 
-    def __init__(self,q,sort='stars',page=1,per_page=3,language=''):
+    def __init__(self,q,sort='stars',page=1,per_page=100,language=''):
         self.q=q
         self.sort=sort
         self.page=page
