@@ -13,6 +13,10 @@ BOT_NAME = 'myfirstSpider'
 
 SPIDER_MODULES = ['myfirstSpider.spiders']
 NEWSPIDER_MODULE = 'myfirstSpider.spiders'
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.54 Safari/536.5'
+
+DOWNLOAD_DELAY = 30
+
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -33,18 +37,19 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = True
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-DEFAULT_REQUEST_HEADERS = {
-  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'Accept-Language': 'en',
-
-
-}
+# DEFAULT_REQUEST_HEADERS = {
+#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+#   'Accept-Language': 'en',
+#   'Authorization': 'token e1421978758ce779d82f7ebc622c9a8e5e861887'
+#
+#
+# }
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
